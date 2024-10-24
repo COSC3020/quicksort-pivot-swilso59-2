@@ -23,7 +23,7 @@ might help with the notation for mathematical expressions.
 ## Answer 
 In slide 34. We can see that using the leftmost element as the pivot. We can see that this has a 50% chance of being a good pivot. 
 
-Using another pivot selection method like median-of-three. We choose three elements. We know that we can either have a 50% chance of picking a bad or good pivot. Since we are picking 3 elements and do not know what they are. We need to consider every permutation. We can do this by assigning our pivots a percentage. A bad pivot can be broken down into two sections high or low. We know that the chance of picking a bad pivot is $\frac{1}{2}$ this give us a $\frac{1}{4}$ chance of picking a pivto that is high or low and a $\frac{1}{2}$ chance of the pivot being good. knowing this we can now go through all the combinations of how we can pick 3 pivots. Then we can determine the probability of if our final pivot will be good or bad. 
+Since we are picking 3 elements and do not know what they are. We need to consider every permutation. We can do this by assigning our pivots a percentage. A bad pivot can be broken down into two sections high or low. We know that the chance of picking a bad pivot is $\frac{1}{2}$ this give us a $\frac{1}{4}$ chance of picking a pivt that is high or low and a $\frac{1}{2}$ chance of the pivot being good. knowing this we can now go through all the permutations. Then we can determine the probability of if our final pivot will be good or bad. 
 permutations of a pivot:
 1. LLL
 2. LLG
@@ -52,3 +52,18 @@ permutations of a pivot:
 25. HHL
 26. HHG
 27. HHH
+Taking the selections that result in a good pivot and adding up there probablility will give us the chance we have of selecting a good pivot via the median of three method.
+LGG*
+LGH*
+LHG*
+GLG*
+GLH*
+GGL*
+GGG*
+GGH*
+GHL*
+GHG*
+HLG*
+HGL*
+HGG*
+This give use the equation
