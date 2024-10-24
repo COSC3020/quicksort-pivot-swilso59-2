@@ -24,9 +24,31 @@ might help with the notation for mathematical expressions.
 In slide 34. We can see that using the leftmost element as the pivot. We can see that this has a 50% chance of being a good pivot. 
 
 Using another pivot selection method like median-of-three. We choose three elements. We know that we can either have a 50% chance of picking a bad or good pivot. Since we are picking 3 elements and do not know what they are. We need to consider every permutation. We can do this by assigning our pivots a percentage. A bad pivot can be broken down into two sections high or low. We know that the chance of picking a bad pivot is $\frac{1}{2}$ this give us a $\frac{1}{4}$ chance of picking a pivto that is high or low and a $\frac{1}{2}$ chance of the pivot being good. knowing this we can now go through all the combinations of how we can pick 3 pivots. Then we can determine the probability of if our final pivot will be good or bad. 
-
-- GGG = $\left(\frac{1}{2}\right)^{3} = \frac{1}{8}$
-- LGG = $\left(\frac{1}{4}\right) \cdot \left(\frac{1}{2}\right)^{2} = \frac{1}{16}$
-- GGH = $\left(\frac{1}{2}\right)^{2} \cdot \left(\frac{1}{4}\right) = \frac{1}{16}$
-- LGH = $\left(\frac{1}{4}\right)^{2} \cdot \left(\frac{1}{2}\right) = \frac{1}{32}$
-- LLG = $(\frac{1}{4})^{2} \times (\frac{1}{2}) = \frac{1}{32}$
+permutations of a pivot:
+1. LLL
+2. LLG
+3. LLH
+4. LGL
+5. LGG*
+6. LGH*
+7. LHL
+8. LHG*
+9. LHH
+10. GLL
+11. GLG*
+12. GLH*
+13. GGL*
+14. GGG*
+15. GGH*
+16. GHL*
+17. GHG*
+18. GHH
+19. HLL
+20. HLG*
+21. HLH
+22. HGL*
+23. HGG*
+24. HGH
+25. HHL
+26. HHG
+27. HHH
